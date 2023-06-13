@@ -1,0 +1,209 @@
+header{
+    width: 100vw;
+    height: 200px;
+    padding: 10px 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    animation: header-slide 1s ease-out forwards;
+}
+
+/* @keyframes header-slide {
+    0%{
+        height: 100px;
+    }
+    
+    100%{
+        min-height: 110px;
+    }
+} */
+
+.logo-container{
+    width: max-content;
+    min-height: 100px;
+    color: white;
+    display: flex;
+    justify-self: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+    
+    
+}
+.logo-container > p{
+    font-size: 20px;
+    color: chartreuse;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: capitalize;
+    
+    background: linear-gradient(to right,
+    chartreuse ,aqua 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+        
+}
+
+.logo-container img{
+    padding: 2px;
+    width: 120px;
+    height: 100%;
+    font-weight: 700;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.topnav-container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+.topnav-links{
+   display: flex;
+   align-items: baseline;
+   justify-content: flex-end;
+   width: max-content;
+   gap: 4rem;
+}
+.topnav-links div{
+    color: white;
+    display: flex;
+    align-self: baseline;
+    gap: 12px;
+}
+
+.topnav-links > div a{
+    font-size: 1.7rem;
+    color: #f4f4f4;
+}
+
+.topnav-booking-btn{
+        width: max-content;
+        padding: 10px 16px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 13px;
+        outline: none;
+        background-color: white;
+        border: 0;
+        animation: camera-flash 700ms ease-out forwards;
+
+}
+
+.topnav-booking-btn:visited{
+    color: white;
+}
+ 
+.visibility{
+    color: whitesmoke;
+    visibility: hidden;
+    transition:  ease-in-out;
+    cursor: pointer;
+}
+.visibility i{
+    color: white;
+}
+.booking-btn{
+    animation: camera-flash 700ms ease-out  forwards;
+    color: black;
+    background-color: white;
+    font-weight: 400;
+
+}
+.booking-btn:visited{
+    color: black;
+}
+
+@keyframes camera-flash {
+    0%{
+        background-color: black ;
+        color: white;
+    }
+    50%{
+        background-color: white ;
+    }
+
+    75%{
+        background-color: black ;
+        color: crimson;
+    }
+    100%{
+        background-color: white ;
+        color: black;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    header{
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+  
+    .visibility{
+        width: 100%;
+        cursor: pointer;
+        visibility: visible;
+        padding: 0 1rem;
+
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .booking-btn{
+        width: max-content;
+        padding: 7px 16px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 13px;
+        outline: none;
+        border: 0;
+    }
+
+    .visibility i{
+        width: max-content;
+        height: auto;
+        font-size: 2.5rem;
+
+    }
+
+    .logo-container{
+        width: 100%;
+        min-height: 100px;
+
+    }
+    .logo-container > p{
+        font-size: 17px;
+        color: chartreuse;
+    }
+    .logo-container img{
+        width: 70px;
+        height: 70px;
+
+    }
+    .topnav-container{
+        display: none;
+    }
+  
+}

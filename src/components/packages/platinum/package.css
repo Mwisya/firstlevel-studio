@@ -1,0 +1,91 @@
+.package{
+    width: 340px;
+    height: 650px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 10px lightgray;
+
+}
+
+.package-name{
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: crimson;
+}
+
+.package_list{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.package_list-item{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.package_list-item::first-letter{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.list-icon{
+    background-color: chartreuse;
+    color: white;
+
+    border-radius: 50%;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.package:nth-child(4) .package-name{
+    color: gold;
+    font-weight: bold;
+}
+/* .package:nth-child(1){
+    background-color: white;
+}
+.package:nth-child(2){
+    background-color: lightgreen;
+}
+.package:nth-child(3){
+    background-color: chartreuse;
+}
+
+.package:nth-child(5){
+    background-color: crimson; */
+/* } */
+
+.package_price{
+    display: flex;
+    gap: 4px;
+    align-self: flex-start;
+    justify-self: flex-start;
+    padding: 10px;
+}
+
+.price{
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.price-in{
+    font-size: 14px;
+    font-family: cursive;
+    font-weight: bold;
+    color: coral;
+}

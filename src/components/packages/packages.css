@@ -1,0 +1,26 @@
+.packages-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  
+}
+
+.packages-container >h2{
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.packages{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}

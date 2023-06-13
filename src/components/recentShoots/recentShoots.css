@@ -1,0 +1,63 @@
+.recent-shoots{
+    width: 100vw;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 1rem 0;
+    background-color: white;
+    
+}
+
+.recent-shoots > h2{
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+
+    padding: 5px 16px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding: 0 1rem;
+    margin-bottom: 5px;
+    
+}
+.recent-shoots p{
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 1rem;
+    font-size: 19px;
+}
+.recent-shoots ul{
+    padding: 0 16px;
+    width: max-content;
+    height: 440px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    overflow: auto;
+}
+
+
+
+@media screen and (max-width:1050px) {
+    .recent-shoots{
+        display: flex;  
+        align-items: center;
+    }
+
+    .recent-shoots ul{
+        width: 100%;
+    }
+
+    .recent-shoots ul{
+        justify-content: flex-start;
+    }
+
+   
+}

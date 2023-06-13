@@ -1,0 +1,95 @@
+.sidenav{
+    width: 87%;
+    height: max-content;
+    padding: 0 0 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    visibility: hidden;
+
+    margin-top: 150px;
+    
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    
+    
+    z-index: 999;
+    position: fixed;
+    top: 1rem;
+    animation: slide-in 500ms ease-out ;
+}
+
+.sidenav-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background-color: aqua;
+}
+
+.sidenav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sidenav h2{
+    color: #191911;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+.close-btn{
+    font-weight: 700;
+    font-size: 52px;
+    cursor: pointer;
+}
+
+
+.side-links{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #191919;
+    font-size: 20px;
+    height: 45px;
+    border-bottom: 1px solid gray;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1.3px;
+    font-weight: 400;
+}
+.side-links:last-child{
+    border-bottom: 0;
+    background-color: crimson;
+}
+.active-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: crimson;
+    font-size: 13px;
+    padding: 10px 7px;
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+
+
+.side-links:hover{
+    background-color: crimson;
+    color: white;
+}
+.side-links:hover svg{
+    color: white;
+}
+
+
+
+@media screen and (max-width:900px) {
+    .sidenav{
+        visibility: visible;
+    }
+}
+
+

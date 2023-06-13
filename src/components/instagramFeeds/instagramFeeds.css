@@ -1,0 +1,22 @@
+.instagram-container{
+    width: 50%;
+    margin: 0 auto;
+    margin: 16px auto;
+    height: 400px;
+    padding: 16px;
+
+    background-color: white;
+    font-weight: 600;
+}
+
+@media screen and (max-width:1050px){
+    .instagram-container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:900px){
+    .instagram-container{
+        width: 100%;
+    }
+}
