@@ -55,19 +55,6 @@
     color: gold;
     font-weight: bold;
 }
-/* .package:nth-child(1){
-    background-color: white;
-}
-.package:nth-child(2){
-    background-color: lightgreen;
-}
-.package:nth-child(3){
-    background-color: chartreuse;
-}
-
-.package:nth-child(5){
-    background-color: crimson; */
-/* } */
 
 .package_price{
     display: flex;
@@ -87,4 +74,10 @@
     font-family: cursive;
     font-weight: bold;
     color: coral;
+}
+
+@media screen and (max-width:500px){
+    .package_list-item{
+      font-size: 14px;
+    }
 }

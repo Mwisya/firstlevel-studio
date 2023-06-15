@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <p>All Rights Reserved First Level Studios</p>
+            <p className='rights-p'>All Rights Reserved First Level Studios</p>
             <p className='copy'>
                 <FaCopyright/> Copyright 2023 
             </p>

@@ -13,6 +13,7 @@ const TopNav = () => {
       <NavLink to='/maternity'  className='top-link'>maternity</NavLink>
       <NavLink to='/clients-choice'  className='top-link'>clients choice</NavLink>
       <NavLink to='/portraits'  className='top-link'>portraits</NavLink>
+      <NavLink to='/contact'  className='top-link'>Contact Us</NavLink>
     </nav>
   )
 }

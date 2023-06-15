@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 import './gallery.css'
 
-const Gallery = () => {
+const Gallery = ({name}) => {
     // const [modal, setModal] = useState(false);
     // const [modalImage, setModalImage] = useState('');
 
@@ -18,8 +18,8 @@ const Gallery = () => {
         <div className='gallery'>
             <div className='gallery-top'>
                 <img src="" alt=""/>
-                <span>scroll down &gt;&gt;&gt;</span>
-                <h2>galleries</h2>
+                {/* <span>scroll down &gt;&gt;&gt;</span> */}
+                <h2>{name}</h2>
                 <Link to={'/packages'}
                     className='booking-link'>Book shoot</Link>
             </div>

@@ -26,13 +26,13 @@ const NewsLetter = () => {
                 <h2 className='bg'>Get notified on offers not limited to
                 </h2>
                 <p>
-                    Photo shoots Video shoots Advertisement Editing  and much more..
+                    Photography | Videography offers | Customers week and much more...
                 </p>
             </div>
 
             <form className="form"
                 onSubmit={submit}>
-                <input type="text" name="email" id="" placeholder='eg... yourEmail@gmail.com'
+                <input type="text" name="email" id="" placeholder='email@gmail.com'
                     value={email}
                     onChange={handleChange}/>
                 <div className='btn-bg'>

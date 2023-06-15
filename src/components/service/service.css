@@ -1,9 +1,11 @@
 .service{
     width: 380px;
-    height: 350px;
+    height: 400px;
     position: relative;
     border: 0.5px solid gainsboro;
     margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
 }
 
 .service img{
@@ -15,15 +17,14 @@
     padding: 12px 20px;
     letter-spacing: 2px;
     height: max-content;
-    font-weight: 600;
-    font-size: 12px;
+    font-weight: 700;
+    font-size: 18px;
 
     position: absolute;
     z-index: 200;
-
-    top: 70%;
-    left: 25%;
-
+    bottom: 16px;
+    left: 10px;
+   
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
     text-decoration: none;
@@ -45,9 +46,20 @@
     .service{
         width: 100%;
     }
-    .link{
-        font-size: 16px;
     
+}
+
+@media screen and (max-width:700px) {
+       .link{
+        padding: 7px 16px; 
     }
     
+}
+
+@media screen and (max-width:500px) {
+    .link{
+     font-size: 14px;
+     padding: 7px 16px; 
+ }
+ 
 }

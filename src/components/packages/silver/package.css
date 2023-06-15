@@ -88,3 +88,9 @@
     font-weight: bold;
     color: coral;
 }
+
+@media screen and (max-width:500px){
+    .package_list-item{
+      font-size: 14px;
+    }
+}

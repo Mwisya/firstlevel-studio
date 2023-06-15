@@ -29,7 +29,7 @@
 }
 
 .title p{
-    font-weight: 400;
+    font-weight: 500;
     font-size: 17px;
 }
 
@@ -42,6 +42,7 @@ form{
     align-items: center;
     justify-content: center;
     background-color: #f4f4f4;
+    margin-top: 10px;
 }
 
 input{
@@ -69,15 +70,21 @@ input::placeholder{
     letter-spacing: 3px;
     background-color: transparent;
     border: 0;
-    font-weight: bold;
+    font-weight: 900;
     background: linear-gradient(to right,
     chartreuse ,aqua 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition:  ease;
 }
 
-/* button:hover{
-} */
+button:hover{
+    background: linear-gradient(to right,
+    chartreuse ,aqua 100%);
+    color: black;
+    /* background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+}
 
 
 @media screen and (max-width:1050px)  {
@@ -96,7 +103,33 @@ input::placeholder{
 }
 
 @media screen and (max-width:700px)  {
+    .title{
+        width: 100%;
+    }
+    .title h2{
+        width: 100%;
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .title p{
+        font-size: 14px;
+    }
     form{
-        width: 90%;
+        width: 100%;
+    }
+    input{
+        padding: 14px 10px;
+        width: 100%;
+    }
+    
+    input::placeholder{
+        font-size: 14px;
+    }
+    .btn-bg button{
+        width: 100px;
+        padding: 14px;
+        font-size: 14px;
+        letter-spacing: 3px;
+    
     }
 }

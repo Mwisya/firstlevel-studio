@@ -21,30 +21,30 @@ function App() {
         <div className="App">
             <Header/>
 
-            <Routes>
+            <Routes basename={process.env.PUBLIC_URL}>
                 <Route path='/'
                     element={<Home/>}/>
-                <Route path='/about-us'
+                <Route path='about-us'
                     element={<AboutPage/>}/>
-                <Route path='/contact'
+                <Route path='contact'
                     element={<ContactPage/>}/>
-                <Route path='/weddings'
+                <Route path='weddings'
                     element={<WeddingsPage/>}/>
-                <Route path='/maternity'
+                <Route path='maternity'
                     element={<MaternityPage/>}/>
-                <Route path='/fashion'
+                <Route path='fashion'
                     element={<FashionPage/>}/>
-                <Route path='/documentaies'
+                <Route path='documentaries'
                     element={<DocumentariesPage/>}/>
-                <Route path='/events'
+                <Route path='events'
                     element={<EventsPage/>}/>
-                <Route path='/clients'
+                <Route path='clients'
                     element={<ClientChoicePage/>}/>
-                <Route path='/portraits'
+                <Route path='portraits'
                     element={<PortraitsPage/>}/>
-                <Route path='/clients-choice'
+                <Route path='clients-choice'
                     element={<ClientChoicePage/>}/>
-                <Route path='/packages'
+                <Route path='packages'
                     element={<PackagesPage/>}/>
             </Routes>
 

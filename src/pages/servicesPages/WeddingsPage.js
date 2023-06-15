@@ -1,11 +1,12 @@
 import React from 'react'
-import { Contact, Gallery } from '../../components'
+import { Gallery } from '../../components'
+import ContactDetails from '../../components/contact/contactDetails/ContactDetails'
 
 const WeddingsPage = () => {
   return (
     <div>
-        <Gallery/>
-        <Contact/>
+        <Gallery name="Weddings"/>
+        <ContactDetails/>
     </div>
   )
 }

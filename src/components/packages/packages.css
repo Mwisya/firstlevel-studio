@@ -7,14 +7,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-  
 }
 
 .packages-container >h2{
-    margin-bottom: 5px;
     text-transform: capitalize;
-    font-weight: 400;
+    font-weight: 600;
+    padding-bottom: 16px;
 }
 .packages{
     width: 100%;
@@ -23,4 +21,12 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width:500px) {
+    .packages-container{
+        padding: 1rem 0.5rem 1.5rem;
+      
+    }
+
 }

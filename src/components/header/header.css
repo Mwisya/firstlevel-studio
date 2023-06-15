@@ -1,7 +1,7 @@
 header{
     width: 100vw;
-    height: 200px;
-    padding: 10px 16px;
+    height: 180px;
+    padding:  16px;
 
     display: flex;
     justify-content: space-between;
@@ -13,20 +13,8 @@ header{
     z-index: 500;
     animation: header-slide 1s ease-out forwards;
 }
-
-/* @keyframes header-slide {
-    0%{
-        height: 100px;
-    }
-    
-    100%{
-        min-height: 110px;
-    }
-} */
-
 .logo-container{
     width: max-content;
-    min-height: 100px;
     color: white;
     display: flex;
     justify-self: flex-start;
@@ -55,7 +43,6 @@ header{
     padding: 2px;
     width: 120px;
     height: 100%;
-    font-weight: 700;
     
     display: flex;
     align-items: center;
@@ -82,25 +69,26 @@ header{
 .topnav-links div{
     color: white;
     display: flex;
-    align-self: baseline;
+    align-self: flex-end;
     gap: 12px;
 }
 
 .topnav-links > div a{
     font-size: 1.7rem;
     color: #f4f4f4;
+    color: gray;
 }
 
 .topnav-booking-btn{
         width: max-content;
-        padding: 10px 16px;
+        padding: 7px 16px;
         border-radius: 20px;
         text-transform: uppercase;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 13px;
         outline: none;
-        background-color: white;
-        border: 0;
+        background-color: #191919;
+        border: 0.2px solid gainsboro;
         animation: camera-flash 700ms ease-out forwards;
 
 }
@@ -114,6 +102,8 @@ header{
     visibility: hidden;
     transition:  ease-in-out;
     cursor: pointer;
+    display: flex;
+    align-items: baseline;
 }
 .visibility i{
     color: white;
@@ -121,8 +111,14 @@ header{
 .booking-btn{
     animation: camera-flash 700ms ease-out  forwards;
     color: black;
-    background-color: white;
-    font-weight: 400;
+    background-color: #191919;
+    border: 0.2px solid gainsboro;
+
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    outline: none;
+    border: 0;
 
 }
 .booking-btn:visited{
@@ -143,15 +139,33 @@ header{
         color: crimson;
     }
     100%{
-        background-color: white ;
-        color: black;
+        background-color: #191919 ;
+        color: white;
+        border: 0.5px solid white;
+
     }
 }
 
 
+@media screen and (max-width:1440px) {
+    .booking-btn{
+        font-size: 16px;
+        padding: 7px 16px;
+    
+    }
+    .logo-container > p{
+        font-size: 17px;
+        font-weight: 700;
+            
+    }
+    
+    .logo-container img{
+        width: 90px;
+    }
+}
 @media screen and (max-width:900px) {
     header{
-        min-height: 200px;
+        height: 180px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -171,14 +185,9 @@ header{
     }
 
     .booking-btn{
-        width: max-content;
-        padding: 7px 16px;
-        border-radius: 20px;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 13px;
-        outline: none;
-        border: 0;
+        padding: 7px 14px;
+        font-size: 14px;
+
     }
 
     .visibility i{
@@ -200,6 +209,61 @@ header{
     .logo-container img{
         width: 70px;
         height: 70px;
+
+    }
+    .topnav-container{
+        display: none;
+    }
+  
+}
+
+@media screen and (max-width:500px) {
+    header{
+        height: 150px;
+        padding: 16px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+  
+    .visibility{
+        padding: 0;
+        width: 100%;
+        cursor: pointer;
+        visibility: visible;
+        padding: 0 1rem;
+
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .booking-btn{
+        padding: 5px 10px;
+        font-size: 12px;
+     
+    }
+    .visibility i{
+        width: max-content;
+        height: auto;
+        font-size: 2.2rem;
+        margin: 0;
+       padding: 0;
+    }
+
+    .logo-container{
+        width: 100%;
+    }
+    .logo-container > p{
+        font-size: 17px;
+        color: chartreuse;
+    }
+    .logo-container img{
+        width: 65px;
+        height: 60px;
+        object-fit: contain;
 
     }
     .topnav-container{

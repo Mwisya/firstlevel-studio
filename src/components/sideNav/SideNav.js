@@ -19,6 +19,7 @@ const SideNav = ({onClick}) => {
           <NavLink to='/maternity' onClick={onClick} className='side-links'>maternity shoot</NavLink>
           <NavLink to='/clients-choice' onClick={onClick} className='side-links'>clients choice</NavLink>
           <NavLink to='/portraits' onClick={onClick} className='side-links'>portraits</NavLink>
+          <NavLink to='/contact' onClick={onClick} className='side-links'>contact us</NavLink>
       </nav>
 
     </nav>

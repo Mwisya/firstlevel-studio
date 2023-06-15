@@ -28,7 +28,7 @@ const Header = () => {
                 <p>first level studios</p>
             </div>
             <div className='visibility'>
-                <Link to='/packages' className='booking-btn'>Book shoot</Link>
+                <Link to={'/packages'} className='booking-btn'>Booking</Link>
                 <i onClick={open}>
                     <MdMenu/>
                 </i>
@@ -53,7 +53,7 @@ const Header = () => {
                        
                     </div>
                     <Link to={'/packages'}
-                        className='topnav-booking-btn'>Book shoot</Link>
+                        className='topnav-booking-btn'>Booking</Link>
                 </div>
             </div>
 
