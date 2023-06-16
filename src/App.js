@@ -21,7 +21,7 @@ function App() {
         <div className="App">
             <Header/>
 
-            <Routes basename={process.env.PUBLIC_URL}>
+            <Routes basename="/">
                 <Route path='/'
                     element={<Home/>}/>
                 <Route path='about-us'
