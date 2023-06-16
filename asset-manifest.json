@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/firstlevel-studio/static/css/main.5dd7407f.css",
+    "main.js": "/firstlevel-studio/static/js/main.359edf15.js",
+    "static/js/787.c3e0876e.chunk.js": "/firstlevel-studio/static/js/787.c3e0876e.chunk.js",
+    "static/media/logo.png": "/firstlevel-studio/static/media/logo.8552132ab238698fabbf.png",
+    "index.html": "/firstlevel-studio/index.html",
+    "main.5dd7407f.css.map": "/firstlevel-studio/static/css/main.5dd7407f.css.map",
+    "main.359edf15.js.map": "/firstlevel-studio/static/js/main.359edf15.js.map",
+    "787.c3e0876e.chunk.js.map": "/firstlevel-studio/static/js/787.c3e0876e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5dd7407f.css",
+    "static/js/main.359edf15.js"
+  ]
+}
